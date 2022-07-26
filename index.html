@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/greeting.css">
     <link rel="stylesheet" href="/css/style.css">
-    <script defer src="/js/greeting & todo.js"></script>
+    <link rel="stylesheet" href="/css/img.css">
+    <link rel="stylesheet" href="/css/calculator.css">
+    <link rel="stylesheet" href="/css/background.css">
+    <link rel="stylesheet" href="/css/calendar.css">
+    <link rel="stylesheet" href="/css/clock.css">
+    <link rel="stylesheet" href="/css/quote.css">
+    <link rel="stylesheet" href="/css/todo.css">
+    <script defer src="/js/greeting.js"></script>
     <script defer src="/js/background.js"></script>
     <script defer src="/js/clock.js"></script>
     <script defer src="/js/calendar.js"></script>
     <script defer src="/js/calculator.js"></script>
     <script defer src="/js/imgSlide.js"></script>
+    <script defer src="/js/quote.js"></script>
+    <script defer src="/js/todo.js"></script>
     <!-- 캘린더 라이브러리 -->
     <link rel="stylesheet" type="text/css" href="./fullcalendar-5.11.0/lib/main.min.css" />
     <link rel="stylesheet" type="text/css" href="./fullcalendar-5.11.0/lib/main.css" />
@@ -19,11 +29,18 @@
 </head>
 <body>
     <!-- 시간 -->
-    <div id="clock"> 00:00</div>
+    <div id="clock" class="hidden"> 00:00</div>
     <!-- 로그인 -->
     <form id="login" class="hidden">
-        <input type="text" placeholder="Your Name" required maxlength="15">
-        <button>submit</button>
+        <div class="loginForm">
+            <p class="infor">
+                My name is...
+            </p>
+            <div class="input">
+                <input type="text" placeholder="Your Name" required maxlength="15">
+                <button>→</button>
+            </div>
+        </div>
     </form>
     <h1 id="greeting"></h1>
     <!-- 랜덤 배경 -->
@@ -31,101 +48,109 @@
         <div class="bgImgCover"></div>
     </div>
     <!-- 계산기 -->
-    <div id="caculator">
-        <article id="area-display">
-            <div id="display" class="off">0</div>
-            <div id="steps">0</div>
-        </article>
+    <main class="main hidden">
+        <div id="caculator">
+            <article id="areaDisplay">
+                <div id="display" class="off">0</div>
+                <div id="steps">0</div>
+            </article>
 
-        <article id="area-btn">
-            <button class="num" data-val="7">7</button>
-            <button class="num" data-val="8">8</button>
-            <button class="num" data-val="9">9</button>
-            <button id="reset">C</button>
-            <button class="num" data-val="4">4</button>
-            <button class="num" data-val="5">5</button>
-            <button class="num" data-val="6">6</button>
-            <button class="op" data-val="/">÷</button>
-            <button class="num" data-val="1">1</button>
-            <button class="num" data-val="2">2</button>
-            <button class="num" data-val="3">3</button>
-            <button class="op" data-val="*">×</button>
-            <button class="num" id="interger" data-val="-1">+/-</button>
-            <button class="num" data-val="0">0</button>
-            <button class="op" data-val=".">.</button>
-            <button class="op" data-val="-">-</button>
-            <button id="btn_result" >=</button>
-            <button class="op" data-val="+">+</button>
-            
-        </article>
-    </div>
-    <!-- todo List -->
-    <form id="todoForm">
-        <input type="text" placeholder="Write a To do" required>
-    </form>
-    <ul id="todoList"></ul>
-    <!-- 이미지 슬라이드 -->
-    <div id="container">
-
-        <div class="slide">
-            <img src="/img/지브리 이미지/지브리 이미지1.jpg" alt="지브리 센과 치히로의 행방불명">
-            <p>Studio Ghibli</p>
+            <article id="areaBtn">
+                <button class="num" data-val="7">7</button>
+                <button class="num" data-val="8">8</button>
+                <button class="num" data-val="9">9</button>
+                <button id="reset">C</button>
+                <button class="num" data-val="4">4</button>
+                <button class="num" data-val="5">5</button>
+                <button class="num" data-val="6">6</button>
+                <button class="op" data-val="/">÷</button>
+                <button class="num" data-val="1">1</button>
+                <button class="num" data-val="2">2</button>
+                <button class="num" data-val="3">3</button>
+                <button class="op" data-val="*">×</button>
+                <button class="num" id="interger" data-val="-1">+/-</button>
+                <button class="num" data-val="0">0</button>
+                <button class="op" data-val=".">.</button>
+                <button class="op" data-val="-">-</button>
+                <button id="btnResult" >=</button>
+                <button class="op" data-val="+">+</button>
+                
+            </article>
+        </div>
+        <!-- todo List -->
+        <div class="todoList">
+            <form id="todoForm">
+                <input type="text" placeholder="Write a To do" required>
+            </form>
+            <ul id="todoList"></ul>
         </div>
         
-        <div class="slide">
-            <img src="/img/지브리 이미지/지브리 이미지2.jpg" alt="지브리 센과 치히로의 행방불명">
-            <p>Studio Ghibli</p>
+        <!-- 이미지 슬라이드 -->
+        <div class="imgAndCal">
+            <div class="imgSlider">
+                <div id="container">
+
+                    <div class="slide">
+                        <img src="/img/지브리 이미지/지브리 이미지1.jpg" alt="지브리 센과 치히로의 행방불명">
+                        <p>Studio Ghibli</p>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="/img/지브리 이미지/지브리 이미지2.jpg" alt="지브리 센과 치히로의 행방불명">
+                        <p>Studio Ghibli</p>
+                    </div>
+            
+                    <div class="slide">
+                        <img src="/img/지브리 이미지/지브리 이미지3.jpg" alt="지브리 마루 밑 아리에티">
+                        <p>Studio Ghibli</p>
+                    </div>
+            
+                    <div class="slide">
+                        <img src="/img/지브리 이미지/지브리 이미지4.jpg" alt="지브리 하울의 움직이는 성">
+                        <p>Studio Ghibli</p>
+                    </div>
+            
+                    <div class="slide">
+                        <img src="/img/지브리 이미지/지브리 이미지5.jpg" alt="지브리 하울의 움직이는 성">
+                        <p>Studio Ghibli</p>
+                    </div>
+            
+                    <div class="slide">
+                        <img src="/img/지브리 이미지/지브리 이미지6.jpg" alt="지브리 하울의 움직이는 성">
+                        <p>Studio Ghibli</p>
+                    </div>
+            
+                    <div class="slide">
+                        <img src="/img/지브리 이미지/지브리 이미지7.jpg" alt="지브리 마녀배달부 키키">
+                        <p>Studio Ghibli</p>
+                    </div>
+            
+                    <div class="slide">
+                        <img src="/img/지브리 이미지/지브리 이미지8.jpg" alt="지브리 이웃집 토토로">
+                        <p>Studio Ghibli</p>
+                    </div>
+            
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+            
+                <div class="dots">
+                    <span class="dot" data-val="0"></span>
+                    <span class="dot" data-val="1"></span>
+                    <span class="dot" data-val="2"></span>
+                    <span class="dot" data-val="3"></span>
+                    <span class="dot" data-val="4"></span>
+                    <span class="dot" data-val="5"></span>
+                    <span class="dot" data-val="6"></span>
+                    <span class="dot" data-val="7"></span>
+                </div>
+            </div>
+            <!-- 캘린더 -->
+            <div id='calendar'></div>
         </div>
-
-        <div class="slide">
-            <img src="/img/지브리 이미지/지브리 이미지3.jpg" alt="지브리 마루 밑 아리에티">
-            <p>Studio Ghibli</p>
-        </div>
-
-        <div class="slide">
-            <img src="/img/지브리 이미지/지브리 이미지4.jpg" alt="지브리 하울의 움직이는 성">
-            <p>Studio Ghibli</p>
-        </div>
-
-        <div class="slide">
-            <img src="/img/지브리 이미지/지브리 이미지5.jpg" alt="지브리 하울의 움직이는 성">
-            <p>Studio Ghibli</p>
-        </div>
-
-        <div class="slide">
-            <img src="/img/지브리 이미지/지브리 이미지6.jpg" alt="지브리 하울의 움직이는 성">
-            <p>Studio Ghibli</p>
-        </div>
-
-        <div class="slide">
-            <img src="/img/지브리 이미지/지브리 이미지7.jpg" alt="지브리 마녀배달부 키키">
-            <p>Studio Ghibli</p>
-        </div>
-
-        <div class="slide">
-            <img src="/img/지브리 이미지/지브리 이미지8.jpg" alt="지브리 이웃집 토토로">
-            <p>Studio Ghibli</p>
-        </div>
-
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-    </div>
-
-    <div class="dots">
-        <div class="dot" data-val="0"></div>
-        <div class="dot" data-val="1"></div>
-        <div class="dot" data-val="2"></div>
-        <div class="dot" data-val="3"></div>
-        <div class="dot" data-val="4"></div>
-        <div class="dot" data-val="5"></div>
-        <div class="dot" data-val="6"></div>
-        <div class="dot" data-val="7"></div>
-        <div class="dot" data-val="8"></div>
-    </div>
-    <!-- 캘린더 -->
-    <div id='calendar'></div>
+    </main>
     <!-- 랜덤명대사 -->
-    <div id="quote">
+    <div id="quote" class="hidden">
         <span></span>
         <span></span>
     </div>

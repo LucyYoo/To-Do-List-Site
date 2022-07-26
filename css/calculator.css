@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#caculator{
+    background-color: #ffd8d6;
+    display: flex;
+    flex-direction: column;
+    width: 297px;
+    border: 1px solid #943134;
+}
+
+#areaDisplay{
+    background-color: #ffe9e8;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    height: 90px;
+    padding: 10px 10px;
+}
+
+#areaBtn{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 65px);
+    grid-auto-rows: 65px;
+    padding: 10px;
+}

@@ -1,0 +1,49 @@
+:root{
+    /* size */
+    --padding: 16px;
+    --margin: 16px;
+    --large: 18px;
+    --medium: 16px;
+    --small: 12px;
+    --img-width: 500px;
+    --img-height: 300px;
+
+    /* color */
+    --black: #000000;
+    --black-opercity: rgba(0, 0, 0, 0.5);
+    --white-opercity: rgba(255, 255, 255, 0.5);
+    --white:#ffffff;
+    --light-green:#e0f2f1;
+    --green:#80cbc4;
+    --light-yellow: #fff59d;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    background-color: var(--white-opercity);
+    
+}
+
+.imgAndCal{
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;
+}

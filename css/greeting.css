@@ -1,0 +1,79 @@
+:root{
+    /* size */
+    --padding: 16px;
+    --margin: 16px;
+    --large: 18px;
+    --medium: 16px;
+    --small: 12px;
+    --img-width: 500px;
+    --img-height: 300px;
+
+    /* color */
+    --black: #000000;
+    --black-opercity: rgba(0, 0, 0, 0.5);
+    --white-opercity: rgba(255, 255, 255, 0.5);
+    --opercity: rgba(0, 0, 0, 0);
+    --white:#ffffff;
+    --light-green:#e0f2f1;
+    --green:#80cbc4;
+    --light-yellow: #fff59d;
+
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginForm{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    background-color: var(--white-opercity);
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+.loginForm input{
+    height: 50px;
+    width: 200px;
+    background-color: var(--opercity);
+    border: none;
+    border-bottom: solid 3px var(--white);
+}
+
+.loginForm input::placeholder{
+    text-align: center;
+    font-size: calc(var(--large) * 1.5);
+    color: var(--white);
+}
+
+.loginForm button{
+    cursor: pointer;
+    border: none;
+    padding-bottom: calc(var(--padding)*2);
+    background-color: var(--opercity);
+    height: 50px;
+    width: 80px;
+    color: var(--white);
+    font-size: calc(var(--large)*2);
+    border-bottom: solid 3px var(--white);
+
+}
+
+.infor{
+    position: absolute;
+    color: var(--white);
+    top: 20%;
+    font-size: calc(var(--large)*1.8);
+}
+
+.input{
+    display: flex;
+}
