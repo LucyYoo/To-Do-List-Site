@@ -43,3 +43,4 @@ if(savedData === null){
 
 //login에 display: flex가 우선적용되어 숨겨지지 않는 오류 발생. 
 //class 추가 방법으로 해결하고 싶으나 일단 style.display 수정하여 해결
+
