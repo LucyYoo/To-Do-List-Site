@@ -52,4 +52,3 @@ const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 $quote.innerHTML = todayQuote.quote;
 $work.innerHTML = todayQuote.work;
-
