@@ -58,7 +58,7 @@
 
 .prev:hover, .next:hover{
     background-color: var(--black-opercity);
-    border-radius: 10%;
+    border-radius: 15%;
 }
 
 .dots{
