@@ -1,49 +1,87 @@
-:root{
-    /* size */
-    --padding: 16px;
-    --margin: 16px;
-    --large: 18px;
-    --medium: 16px;
-    --small: 12px;
-    --img-width: 500px;
-    --img-height: 300px;
-
-    /* color */
-    --black: #000000;
-    --black-opercity: rgba(0, 0, 0, 0.5);
-    --white-opercity: rgba(255, 255, 255, 0.5);
-    --white:#ffffff;
-    --light-green:#e0f2f1;
-    --green:#80cbc4;
-    --light-yellow: #fff59d;
-
-}
-
 .caculatorBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--white-opercity);
+    border-radius: 10%;
 }
 
 #caculator{
-    background-color: #ffd8d6;
+    background-color: var(--light-back);
     display: flex;
     flex-direction: column;
-    width: 297px;
-    border: 1px solid #943134;
+    width: 340px;
+    height: 500px;
+    border: 1px solid var(--dark-beige);
+    border-radius: 5%;
 }
 
 #areaDisplay{
-    background-color: #ffe9e8;
+    background-color: var(---light-back);
     display: flex;
     flex-direction: column;
     text-align: right;
-    height: 90px;
+    height: 100px;
     padding: 10px 10px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+#areaDisplay #steps{
+    font-size: calc(var(--large) * 2);
+}
+
+#areaDisplay #display{
+    color: var(--dark-white);
 }
 
 #areaBtn{
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(4, 65px);
-    grid-auto-rows: 65px;
+    grid-template-columns: repeat(4, 75px);
+    grid-auto-rows: 75px;
     padding: 10px;
+}
+
+#areaBtn button{
+    border-radius: 20%;
+}
+
+.num{
+    background-color: var(--num-white);
+    border: solid 1px var(--dark-white);
+}
+
+.num:hover{
+    background-color: var(--back-white);
+}
+
+.op{
+    background-color: var(--light-beige);
+    border: solid 1px var(--dark-beige);
+}
+
+.op:hover, #reset:hover, #btnResult:hover{
+    background-color: var(--back-beige);
+}
+
+#reset, #btnResult{
+    background-color: var(--back-beige);
+    border: solid 1px var(--dark-beige);
+}
+
+#reset:hover, #btnResult:hover{
+    background-color: var(--hover-beige);
+}
+
+#areaBtn button:hover{
+    box-shadow: 2px 2px 2px 1px var(--gray-opercity);
+}
+
+#btnResult{
+    grid-column: span 3;
+}
+
+.off{
+    visibility: hidden;
 }

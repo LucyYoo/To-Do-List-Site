@@ -8,6 +8,8 @@ const data = {
     operator: undefined
 }
 
+const OFF_KEY = 'off';
+
 function onNum(operator, target){
     let prevOrcurr = operator ? 'curr' : 'prev';
     const val = target.dataset.val;
@@ -25,7 +27,7 @@ function onNum(operator, target){
 }
 
 function onOps(target){
-    $display.classList.remove('off');
+    $display.classList.remove(OFF_KEY);
     onResult();
     const dataOp = target.dataset.val;
     data.operator = dataOp;
@@ -39,14 +41,14 @@ function onResult(){
     if(data.prev === undefined || data.curr === undefined || data.operator === undefined) return;
 
     data.prev = calSum();
-    $steps.innerHTML = data.prev;
+    $display.innerHTML = data.prev;
     data.curr='';
 }
 
 function showResult(){
     if(data.prev === undefined || data.curr === undefined || data.operator === undefined) return;
 
-    $display.classList.add('off');
+    $display.classList.add(OFF_KEY);
     data.prev = calSum();
     $steps.innerHTML = data.prev;
     data.curr='';
@@ -89,7 +91,7 @@ function onReset(){
     data.prev = '';
     data.curr = '';
     $display.innerHTML = '0';
-    $display.classList.add('off');
+    $display.classList.add(OFF_KEY);
     $steps.innerHTML = '0';
     data.operator = undefined;
 }

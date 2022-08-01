@@ -10,12 +10,20 @@
 
     /* color */
     --black: #000000;
+    --gray-opercity: rgba(209, 209, 209, 0.7);
     --black-opercity: rgba(0, 0, 0, 0.5);
     --white-opercity: rgba(255, 255, 255, 0.5);
     --white:#ffffff;
-    --light-green:#e0f2f1;
-    --green:#80cbc4;
-    --light-yellow: #fff59d;
+    ---light-back: #faf1e9;
+    --light-back: #f7e5d5;
+    --num-white:#fafafa;
+    --back-white:#f3f3f3;
+    --dark-white: #aaaaaa;
+    --light-beige: #f7eae7;
+    --back-beige: #f8ddd7;
+    --hover-beige: #f3cec6;
+    --dark-beige: #db9b7e;
+    
 
 }
 
@@ -41,8 +49,8 @@
     display: grid;
     grid-template-columns: repeat(3, 450px);
     grid-template-rows: repeat(2, 300px);
-    grid-gap: 30px;
-    margin: 0 60px;
+    grid-gap: 20px;
+    margin: 0 150px;
     justify-content: space-around;
     /* background-color: var(--white-opercity); */
     
@@ -71,9 +79,7 @@
     grid-row: span 2;
 }
 
-.imgSlider{
-    
-}
+
 /* .imgAndCal{
     display: flex;
     flex-direction: column;

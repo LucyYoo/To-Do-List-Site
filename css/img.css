@@ -1,28 +1,7 @@
-:root{
-    /* size */
-    --padding: 16px;
-    --margin: 16px;
-    --minus-margin: -22px;
-    --large: 18px;
-    --medium: 16px;
-    --small: 12px;
-    --img-width: 500px;
-    --img-height: 300px;
-
-    /* color */
-    --black: #000000;
-    --black-opercity: rgba(0, 0, 0, 0.5);
-    --white:#ffffff;
-    --light-green:#e0f2f1;
-    --green:#80cbc4;
-    --light-yellow: #fff59d;
-    --gray: #9e9e9e;
-    --dark-gray: #707070;
-
-}
 
 .imgSlider{
     background-color: var(--white-opercity);
+    border-radius: 10%;
 }
 
 #container{
