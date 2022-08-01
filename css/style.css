@@ -10,6 +10,8 @@
 
     /* color */
     --black: #000000;
+    --gray: rgb(209, 209, 209);
+    --dark-gray: rgb(128, 128, 128);
     --gray-opercity: rgba(209, 209, 209, 0.7);
     --black-opercity: rgba(0, 0, 0, 0.5);
     --white-opercity: rgba(255, 255, 255, 0.5);
