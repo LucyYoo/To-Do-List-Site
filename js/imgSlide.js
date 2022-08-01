@@ -37,12 +37,12 @@ $dots.addEventListener('click', dotMove);
 
 function showImg(n){
     let size = $slide.length;
-    if((n+1) > size){
+    if( (n+1) > size){
         slideIndex =0;
         n=0;
-    } else if(n < 0){
-        slideIndex = size;
-        n = size;
+    } else if( n< 0){
+        slideIndex = (size-1);
+        n = (size-1);
     }
 
     for(let i=0; i<size; i++){
