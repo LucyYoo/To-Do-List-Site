@@ -21,6 +21,10 @@
 
 }
 
+.imgSlider{
+    background-color: var(--white-opercity);
+}
+
 #container{
     position: relative;
     max-width: 300px;

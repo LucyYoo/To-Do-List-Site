@@ -38,17 +38,46 @@
 }
 
 .main{
-    display: flex;
-    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 30px;
+    margin: 0 60px;
     justify-content: space-around;
-    background-color: var(--white-opercity);
+    /* background-color: var(--white-opercity); */
     
 }
+#greeting{ 
+    flex-basis: 10%;
+}
 
-.imgAndCal{
+#clock{
+    flex-basis: 20%;
+}
+
+.main{
+    flex-basis: 60%;
+}
+
+#quote{
+    flex-basis: 10%;
+}
+
+.caculatorBack{
+    grid-row: span 2;
+}
+
+.todoList{
+    grid-row: span 2;
+}
+
+.imgSlider{
+    
+}
+/* .imgAndCal{
     display: flex;
     flex-direction: column;
-}
+} */
 
 .hidden{
     display: none;

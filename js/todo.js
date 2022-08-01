@@ -1,6 +1,7 @@
 const $todoForm = document.querySelector('#todoForm');
 const $todoInput = document.querySelector('#todoForm input');
 const $todoList = document.querySelector('#todoList');
+const $resetBtn = document.querySelector('#resetBtn');
 
 const TODOS_KEY = "todos";
 
@@ -53,3 +54,11 @@ if(saveToDos !== null){
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+
+function resetToDo(){
+    localStorage.removeItem(TODOS_KEY);
+    toDos = [];
+    location.reload();
+}
+
+$resetBtn.addEventListener("click", resetToDo);

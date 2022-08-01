@@ -28,8 +28,6 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- 시간 -->
-    <div id="clock" class="hidden"> 00:00</div>
     <!-- 로그인 -->
     <form id="login" class="hidden">
         <div class="loginForm">
@@ -42,52 +40,59 @@
             </div>
         </div>
     </form>
-    <!-- 인사 -->
-    <h1 id="greeting"></h1>
+
+    <!-- 인사, logout -->
+    <h2 id="greeting"></h2>
+    <button id="logoutBtn" class="hidden">LogOut</button>
+    <!-- 시간 -->
+    <div id="clock" class="hidden"> 00:00</div>
+
     <!-- 랜덤 배경 -->
     <div id="bgImg">
         <div class="bgImgCover"></div>
     </div>
     <!-- 계산기 -->
     <main class="main hidden">
-        <div id="caculator">
-            <article id="areaDisplay">
-                <div id="display" class="off">0</div>
-                <div id="steps">0</div>
-            </article>
+        <div class="caculatorBack">
+            <div id="caculator">
+                <article id="areaDisplay">
+                    <div id="display" class="off">0</div>
+                    <div id="steps">0</div>
+                </article>
 
-            <article id="areaBtn">
-                <button class="num" data-val="7">7</button>
-                <button class="num" data-val="8">8</button>
-                <button class="num" data-val="9">9</button>
-                <button id="reset">C</button>
-                <button class="num" data-val="4">4</button>
-                <button class="num" data-val="5">5</button>
-                <button class="num" data-val="6">6</button>
-                <button class="op" data-val="/">÷</button>
-                <button class="num" data-val="1">1</button>
-                <button class="num" data-val="2">2</button>
-                <button class="num" data-val="3">3</button>
-                <button class="op" data-val="*">×</button>
-                <button class="num" id="interger" data-val="-1">+/-</button>
-                <button class="num" data-val="0">0</button>
-                <button class="op" data-val=".">.</button>
-                <button class="op" data-val="-">-</button>
-                <button id="btnResult" >=</button>
-                <button class="op" data-val="+">+</button>
-                
-            </article>
+                <article id="areaBtn">
+                    <button class="num" data-val="7">7</button>
+                    <button class="num" data-val="8">8</button>
+                    <button class="num" data-val="9">9</button>
+                    <button id="reset">C</button>
+                    <button class="num" data-val="4">4</button>
+                    <button class="num" data-val="5">5</button>
+                    <button class="num" data-val="6">6</button>
+                    <button class="op" data-val="/">÷</button>
+                    <button class="num" data-val="1">1</button>
+                    <button class="num" data-val="2">2</button>
+                    <button class="num" data-val="3">3</button>
+                    <button class="op" data-val="*">×</button>
+                    <button class="num" id="interger" data-val="-1">+/-</button>
+                    <button class="num" data-val="0">0</button>
+                    <button class="op" data-val=".">.</button>
+                    <button class="op" data-val="-">-</button>
+                    <button id="btnResult" >=</button>
+                    <button class="op" data-val="+">+</button>
+                    
+                </article>
+            </div>
         </div>
         <!-- todo List -->
         <div class="todoList">
             <form id="todoForm">
                 <input type="text" placeholder="Write a To do" required>
             </form>
+            <button id="resetBtn">reset</button>
             <ul id="todoList"></ul>
         </div>
         
         <!-- 이미지 슬라이드 -->
-        <div class="imgAndCal">
             <div class="imgSlider">
                 <div id="container">
 
@@ -148,7 +153,6 @@
             </div>
             <!-- 캘린더 -->
             <div id='calendar'></div>
-        </div>
     </main>
     <!-- 랜덤명대사 -->
     <div id="quote" class="hidden">

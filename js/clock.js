@@ -1,4 +1,4 @@
-
+//clock은 greeting에서 선언해두었음.
 
 function getClock(){
     const date = new Date();
