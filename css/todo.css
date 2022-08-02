@@ -2,4 +2,7 @@
 .todoList{
     background-color: var(--white-opercity);
     border-radius: 10%;
+    text-align: center;
+    padding-top: var(--padding);
 }
+
