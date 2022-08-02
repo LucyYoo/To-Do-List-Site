@@ -24,6 +24,8 @@
     background-color: var(--opercity);
     border: none;
     border-bottom: solid 3px var(--white);
+    color: var(--white);
+    font-size: calc(var(--large)*1.5);
 }
 
 .loginForm input::placeholder{
