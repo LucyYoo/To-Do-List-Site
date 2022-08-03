@@ -79,5 +79,6 @@
     margin: calc(var(--margin)/2);
     padding: calc(var(--padding)/2); 
     border: var(--white);
+    margin-right: var(--margin);
     border-radius: 10%;
 }

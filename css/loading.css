@@ -1,0 +1,45 @@
+.loading{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading span{
+    display: inline-block;
+    margin: calc(var(--margin) / 2.5);
+    width: 10px;
+    height: 10px;
+    background-color: var(--gray);
+    border-radius: 50%;
+    animation: loading 1s 0s linear infinite;
+}
+
+.loading span:nth-child(1){
+    animation-delay: 0s;
+    background-color: var(--back-beige);
+}
+
+.loading span:nth-child(2){
+    animation-delay: 0.2s;
+    background-color: var(--hover-beige);
+}
+
+.loading span:nth-child(3){
+    animation-delay: 0.4s;
+    background-color: var(--dark-beige);
+}
+
+@keyframes loading{
+    0%,
+    100%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}

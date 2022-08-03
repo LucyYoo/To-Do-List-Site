@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Gamja+Flower&family=Jua&family=Nanum+Pen+Script&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Gamja+Flower&family=Jua&family=Nanum+Pen+Script&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/greeting.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="/css/clock.css">
     <link rel="stylesheet" href="/css/quote.css">
     <link rel="stylesheet" href="/css/todo.css">
+    <link rel="stylesheet" href="/css/loading.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script defer src="/js/greeting.js"></script>
+    <script defer src="/js/loading.js"></script>
     <script defer src="/js/background.js"></script>
     <script defer src="/js/clock.js"></script>
     <script defer src="/js/calendar.js"></script>
@@ -32,6 +35,12 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- 로딩화면 -->
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <!-- 로그인 -->
     <form id="login" class="hidden">
         <div class="loginForm">
