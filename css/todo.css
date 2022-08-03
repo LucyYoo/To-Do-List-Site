@@ -4,11 +4,15 @@
     border-radius: 10%;
     text-align: center;
     padding-top: var(--padding);
+    font-family: 'Dongle', sans-serif;
 }
 
 #todoForm input{
+    font-family: 'Dongle', sans-serif;
     border: none;
     background-color: var(--opercity);
+    color: var(--white);
+    font-size: calc(var(--large)*1.8);
     border-bottom: solid 3px var(--white);
     height: 40px;
     width: 200px;
@@ -16,7 +20,7 @@
 
 #todoForm input::placeholder{
     color: var(--white);
-    font-size: var(--large);
+    font-size: calc(var(--large)*1.8);
     text-align: center;
 }
 
@@ -24,19 +28,24 @@
     padding-left: calc(var(--padding) * 3);
     padding-top: var(--padding);
     color: var(--white);
-    font-size: calc(var(--large) * 1.3);
+    font-size: calc(var(--large) * 1.5);
     text-align: left;
 }
 
 #resetBtn{
     position: absolute;
     bottom: var(--large);
+    right: calc(var(--large)*2);
     background-color: var(--white-opercity);
     border: none;
     height: 20px;
     width: 50px;
     border-radius: 10%;
+}
 
+#resetBtn:hover{
+    cursor: pointer;
+    background-color: var(--white);
 }
 
 #todoList li{

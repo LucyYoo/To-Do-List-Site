@@ -5,6 +5,10 @@
     height: 100vh;
 }
 
+.infor, .loginForm input, loginForm input::placeholder{
+    font-family: 'Nanum Pen Script', cursive;
+}
+
 .loginForm{
     position: relative;
     display: flex;
@@ -67,6 +71,7 @@
     color: var(--white);
     white-space: nowrap;
     padding: calc(var(--padding)/2) var(--padding);
+    font-family: 'Jua', sans-serif;
 }
 
 #logoutBtn{

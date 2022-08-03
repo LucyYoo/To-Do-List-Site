@@ -1,5 +1,5 @@
-
 #calendar{
+    font-family: 'Jua', sans-serif;
     background-color: var(--white-opercity);
     border-radius: 10%;
 }

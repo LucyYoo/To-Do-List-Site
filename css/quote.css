@@ -1,4 +1,14 @@
-#quote{
+#quote {
+    width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: var(--large);
+    text-align: center;
+    color: var(--dark-white);
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: calc(var(--large) * 1.2);
+}
+
+#quote:hover{
+    color: var(--white);
+    transition: all ease-in 0.3s 0s;
 }

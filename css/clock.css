@@ -1,4 +1,5 @@
 #clock{
+    font-family: 'Roboto Slab', serif;
     color: var(--white);
     font-size: calc(var(--large) * 4);
     text-align: center;

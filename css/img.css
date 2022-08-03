@@ -21,6 +21,7 @@
 }
 
 .slide p{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
     position: absolute;
     bottom: 0;
     text-align: center;
