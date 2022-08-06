@@ -16,6 +16,7 @@
 }
 
 .slide img{
+    border-radius: 5%;
     height: 250px;
     width: 350px;
 }

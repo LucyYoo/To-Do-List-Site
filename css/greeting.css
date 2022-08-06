@@ -70,15 +70,19 @@
 #greeting{
     color: var(--white);
     white-space: nowrap;
+    margin-top: calc(var(--margin));
     padding: calc(var(--padding)/2) var(--padding);
     font-family: 'Jua', sans-serif;
 }
 
 #logoutBtn{
+    font-family: 'Dongle', sans-serif;
+    font-size: var(--large);
     background-color: var(--white-opercity);
-    margin: calc(var(--margin)/2);
+    margin: calc(var(--margin));
     padding: calc(var(--padding)/2); 
     border: var(--white);
     margin-right: var(--margin);
+    color: var(--white);
     border-radius: 10%;
 }
