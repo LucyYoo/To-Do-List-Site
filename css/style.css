@@ -84,3 +84,21 @@
 .hidden{
     display: none;
 }
+
+@media screen and (max-width: 1400px){
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2, 450px);
+        grid-template-rows: repeat(3, 300px);
+        grid-gap: 20px;
+    }
+
+    .caculatorBack{
+        grid-row: span 2;
+    }
+    
+    .todo{
+        grid-row: span 2;
+    }
+    
+}
