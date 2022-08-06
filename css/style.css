@@ -141,11 +141,7 @@
         width: 100%;
         padding: var(--padding);
     }
-
-    .caculatorBack{
-        
-    }
-
+    
     #caculator #areaBtn{
     display: grid;
     grid-gap: 5px;
