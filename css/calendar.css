@@ -4,3 +4,11 @@
     border-radius: 10%;
     padding: var(--padding);
 }
+
+#calendar h2{
+    font-size: var(--small);
+}
+
+#calendar button {
+    font-size: var(--small);
+}
