@@ -19,7 +19,7 @@ function onLoginSubmit(e){
 function printUser(){
     $loginForm.style.display = "none";
     const SaveUser = localStorage.getItem(USERNAME_KEY);
-    $greeting.innerHTML = `Hello ${SaveUser}`;
+    $greeting.innerHTML = `Hello, ${SaveUser}!`;
     $greeting.classList.remove(CLASS_HIDDEN);
     $logoutBtn.classList.remove(CLASS_HIDDEN);
 

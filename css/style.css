@@ -75,13 +75,7 @@
     grid-row: span 2;
 }
 
-
-/* .imgAndCal{
-    display: flex;
-    flex-direction: column;
-} */
-
-.hidden{
+body .hidden{
     display: none;
 }
 
