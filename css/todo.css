@@ -37,6 +37,7 @@
     bottom: var(--large);
     right: calc(var(--large)*2);
     background-color: var(--white-opercity);
+    color: var(--white);
     border: none;
     height: 20px;
     width: 50px;
