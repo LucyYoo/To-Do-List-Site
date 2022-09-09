@@ -2,6 +2,10 @@
 포트폴리오용 토이프로젝트 - 여러 기능을 담은 To Do List 사이트입니다.
 바닐라 자바스크립트로 모든 기능을 구현하였습니다.
 
+#호스팅
+netlify를 통해 호스팅한 사이트의 주소입니다.
+https://to-do-site-jy.netlify.app/
+
 #기능
   1. To Do List
   2. 계산기
